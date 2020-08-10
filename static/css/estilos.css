@@ -1,3 +1,14 @@
+.header {
+  display: flex;
+  padding: 1em 1.5em;
+  justify-content: space-between;
+}
+
+.menu {
+  width: 40px;
+  background: url("../images/icon-hamburger.svg") no-repeat center;
+}
+
 :root {
   --blue: hsl(233,8%,62%);
   --grayblue: hsl(233, 26%, 24%);
