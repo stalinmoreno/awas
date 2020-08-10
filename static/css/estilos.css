@@ -1,7 +1,31 @@
+:root {
+  --blue: hsl(233,8%,62%);
+  --grayblue: hsl(233, 26%, 24%);
+  --limeGreen: hsl(136, 65%, 51%);
+  --lightGray: hsl(0,0%,98%);
+  --rightCyan: hsl(192,70%,51%);
+  font-size: 18px;
+}
+
 body {
   font-family: "Signika Negative", sans-serif;
-  border: 10px solid orange;
   margin: 0;
+}
+
+p {
+  text-align: justify;
+}
+
+.button {
+  color: white;
+  text-decoration: none;
+  padding: 0.6em 2em;
+  border-radius: 1.5em;
+  background-image: linear-gradient(to right, var(--limeGreen), var(--rightCyan));
+}
+
+.wrapper {
+  padding: 0 1.8em;
 }
 
 /*# sourceMappingURL=estilos.css.map */
