@@ -6,26 +6,100 @@
   --limeGreen: hsl(136, 65%, 51%);
   --lightGray: hsl(0,0%,98%);
   --rightCyan: hsl(192,70%,51%);
+  --awasColorBlack: hsl(0,0%,12.9%);
+  --awasColorWhite: #ffffff;
+  --awasColorGreen: hsl(163.5,100%,49.8%);
   font-size: 18px;
+  font-family: 'Dosis', sans-serif;
 }
 
-body{
-  font-family: 'Signika Negative', sans-serif;
+body {
+  //font-family: 'Signika Negative', sans-serif;
+  //font-weight: 400;
   margin:0;
-
-}
-p{
-  text-align: justify;;
+  background: var(--awasColorBlack);
+  color: var(--awasColorWhite);
 }
 
+p {
+  text-align: justify;
+  span {
+    color: var(--awasColorGreen);
+  }
+}
+
+input, button {
+  font-family: 'Dosis', sans-serif;
+  text-decoration: none;
+  border-style: none;
+  outline-style: none;
+}
+/*
 .button {
   color: white;
   text-decoration: none;
   padding: 0.6em 2em;
   border-radius: 1.5em;
   background-image: linear-gradient(to right, var(--limeGreen),var(--rightCyan));
+  text-align: center;
 }
-
+*/
 .wrapper{
   padding:0 1.8em;
+}
+
+/*Button primary*/
+
+.awas_btnPrimary {
+  color: var(--awasColorBlack);
+  font-size: 0.8em;
+  padding: 0.7em 2em;
+  border-radius: 3em;
+  background: var(--awasColorGreen);
+  font-weight: 700 !important;
+  margin-top: 5px;
+  cursor: hand;
+}
+
+/*Button primary line*/
+
+.awas_btnPrimaryLine {
+  color: var(--awasColorGreen);
+  font-size: 0.8em;
+  padding: 0.5em 2em;
+  border-radius: 3em;
+  background: none;
+  font-weight: 700 !important;
+  margin-top: 5px;
+  cursor: hand;
+  border: 2px solid var(--awasColorGreen);
+}
+
+/* Login */
+
+.awas_login {
+  display: flex;
+  flex-direction: column;
+}
+.awas_text {
+  border-style: none;
+  border-radius: 1em;
+  padding: 0.7em 1.5em;
+  background: none;
+  border: 1px solid var(--awasColorWhite);
+  margin-top: 5px;
+  color: var(--awasColorWhite);
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+/* Logo */
+
+.awas_logo {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 2em;
+}
+
+@media screen and (min-width: 768px){
+  /*Tablet*/
 }
