@@ -5,24 +5,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AWAS</title>
-  <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;600;700&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Luckiest+Guy&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="static/css/estilos.css">
 </head>
 
 <body>
 
-  <header>
-    <span>Menu</span>
+  <header class="header">
+    <img src="./static/images/logo.svg" alt="">Awas
+    <nav class="menu">Menu</nav>
   </header>
   <section>
     <div class="wrapper">
+      <span class="awas_logo">AWAS</span>
       <h1>Bienvenido a AWAS</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis consectetur obcaecati ullam in incidunt expedita
-        rem, fugit et aliquam nemo nihil dicta ipsum illum iure sed possimus laborum totam hic?
+        Esta noche es tuya! Habla unas <span>awas</span> ?
       </p>
-      <a href="#" class="button">Iniciar Sesion</a>
+      <form action="#" class="awas_login">
+        <input type="text" class="awas_text" placeholder="Correo" />
+        <input type="password" class="awas_text" placeholder="Contraseña" />
+        <!-- <a href="#" class="button">Iniciar Sesion</a> -->
+        <button class="awas_btnPrimary">Iniciar Sesión</button>
+        <button class="awas_btnPrimaryLine">Crear una cuenta con AWAS</button>
+      </form>
     </div>
   </section>
 
