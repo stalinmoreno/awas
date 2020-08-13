@@ -4,7 +4,8 @@
   --blue: hsl(233,8%,62%);
   --grayblue: hsl(233, 26%, 24%);
   --limeGreen: hsl(136, 65%, 51%);
-  --lightGray: hsl(0,0%,98%);
+  --awasColorGray: hsl(0,0%,64.7%);
+  --awasColorGray2: hsl(0,0%,24.7%);
   --rightCyan: hsl(192,70%,51%);
   --awasColorBlack: hsl(0,0%,12.9%);
   --awasColorWhite: #ffffff;
@@ -19,6 +20,7 @@ body {
   margin:0;
   background: var(--awasColorBlack);
   color: var(--awasColorWhite);
+  overflow: hidden;
 }
 
 p {
@@ -45,33 +47,39 @@ input, button {
 }
 */
 .wrapper{
-  padding:0 1.8em;
+  padding: 0.5em 1.8em;
 }
 
 /*Button primary*/
 
 .awas_btnPrimary {
   color: var(--awasColorBlack);
-  font-size: 0.8em;
-  padding: 0.7em 2em;
+  font-size: 1em;
+  padding: 0.5em 2em;
   border-radius: 3em;
   background: var(--awasColorGreen);
   font-weight: 700 !important;
   margin-top: 5px;
-  cursor: hand;
+  cursor: pointer;
+}
+
+.awas_h1 {
+  color: var(--awasColorGray);
+  font-size: 2em;
+  margin: 0;
 }
 
 /*Button primary line*/
 
 .awas_btnPrimaryLine {
   color: var(--awasColorGreen);
-  font-size: 0.8em;
+  font-size: 1em;
   padding: 0.5em 2em;
   border-radius: 3em;
   background: none;
   font-weight: 700 !important;
   margin-top: 5px;
-  cursor: hand;
+  cursor: pointer;
   border: 2px solid var(--awasColorGreen);
 }
 
@@ -84,20 +92,52 @@ input, button {
 .awas_text {
   border-style: none;
   border-radius: 1em;
-  padding: 0.7em 1.5em;
+  padding: 0.5em 1em;
   background: none;
   border: 1px solid var(--awasColorWhite);
   margin-top: 5px;
   color: var(--awasColorWhite);
-  font-size: 0.8em;
-  font-weight: 700;
+  font-size: 1em;
+  font-weight: 500;
 }
 
 /* Logo */
 
 .awas_logo {
   font-family: 'Luckiest Guy', cursive;
-  font-size: 2em;
+  font-size: 2.5em;
+  color:var(--awasColorGreen);
+}
+
+/*box top green*/
+
+.box-top-green {
+   width: 223px;
+   height: 120px;
+   position: absolute;
+   top: -25px;
+   right: -100px;
+   transform: rotate(205deg);
+   background: var(--awasColorGreen);
+}
+
+.box-bottom-green {
+  width: 200px;
+  height: 172px;
+  position: absolute;
+  bottom: -100px;
+  left: -55px;
+  transform: rotate(22deg);
+  background: var(--awasColorGreen);
+}
+.box-bottom-gray{
+  width: 520px;
+  height: 87px;
+  position: absolute;
+  bottom: -42px;
+  right: -10px;
+  transform: rotate(-10deg);
+  background: var(--awasColorGray2);
 }
 
 @media screen and (min-width: 768px){
