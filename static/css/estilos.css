@@ -27,7 +27,6 @@ body {
   margin: 0;
   background: var(--awasColorBlack);
   color: var(--awasColorWhite);
-  overflow: hidden;
 }
 
 p {
@@ -93,6 +92,7 @@ input, button {
 .awas_login {
   display: flex;
   flex-direction: column;
+  border: 1px solid yellow;
 }
 
 .awas_text {
@@ -112,6 +112,7 @@ input, button {
   font-family: "Luckiest Guy", cursive;
   font-size: 2.5em;
   color: var(--awasColorGreen);
+  border: 1px solid green;
 }
 
 /*box top green*/
@@ -123,6 +124,7 @@ input, button {
   right: -100px;
   transform: rotate(205deg);
   background: var(--awasColorGreen);
+  display: none;
 }
 
 .box-bottom-green {
@@ -133,20 +135,61 @@ input, button {
   left: -55px;
   transform: rotate(22deg);
   background: var(--awasColorGreen);
+  display: none;
 }
 
 .box-bottom-gray {
+  border: 1px solid red;
   width: 520px;
   height: 87px;
   position: absolute;
-  bottom: -42px;
-  right: -10px;
+  bottom: 0px;
+  right: 0px;
   transform: rotate(-10deg);
   background: var(--awasColorGray2);
+  display: none;
+}
+
+.awas_grid {
+  display: grid;
+  border: 1px solid red;
+  grid-template-columns: 1fr;
+}
+
+.awwas_grid_column {
+  border: 1px solid magenta;
 }
 
 @media screen and (min-width: 768px) {
   /*Tablet*/
+  .awas_grid {
+    grid-template-columns: 1fr;
+    grid-column-gap: 10px;
+  }
+
+  .column_login {
+    padding: 0 5%;
+  }
+}
+@media screen and (min-width: 920px) {
+  /*Tablet*/
+  .awas_grid {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+  }
+
+  .column_login {
+    padding: 0 5%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /*Tablet*/
+  /*.awas_grid{
+    grid-template-columns: 2fr, 1fr;
+  }*/
+  .column_login {
+    padding: 0 15%;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

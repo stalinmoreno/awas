@@ -1,6 +1,15 @@
-@import "./header.scss";
-@import "./menu.scss";
-:root{
+.header {
+  display: flex;
+  padding: 1em 1.5em;
+  justify-content: space-between;
+}
+
+.menu {
+  width: 40px;
+  background: url("../images/icon-hamburger.svg") no-repeat center;
+}
+
+:root {
   --blue: hsl(233,8%,62%);
   --grayblue: hsl(233, 26%, 24%);
   --limeGreen: hsl(136, 65%, 51%);
@@ -11,31 +20,30 @@
   --awasColorWhite: #ffffff;
   --awasColorGreen: hsl(163.5,100%,49.8%);
   font-size: 18px;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
 }
 
 body {
-  //font-family: 'Signika Negative', sans-serif;
-  //font-weight: 400;
-  margin:0;
+  margin: 0;
   background: var(--awasColorBlack);
   color: var(--awasColorWhite);
-  //overflow: hidden;
+  overflow: hidden;
 }
 
 p {
   text-align: justify;
-  span {
-    color: var(--awasColorGreen);
-  }
+}
+p span {
+  color: var(--awasColorGreen);
 }
 
 input, button {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   text-decoration: none;
   border-style: none;
   outline-style: none;
 }
+
 /*
 .button {
   color: white;
@@ -46,12 +54,11 @@ input, button {
   text-align: center;
 }
 */
-.wrapper{
+.wrapper {
   padding: 0.5em 1.8em;
 }
 
 /*Button primary*/
-
 .awas_btnPrimary {
   color: var(--awasColorBlack);
   font-size: 1em;
@@ -70,7 +77,6 @@ input, button {
 }
 
 /*Button primary line*/
-
 .awas_btnPrimaryLine {
   color: var(--awasColorGreen);
   font-size: 1em;
@@ -84,12 +90,11 @@ input, button {
 }
 
 /* Login */
-
 .awas_login {
   display: flex;
   flex-direction: column;
-  border: 1px solid yellow;
 }
+
 .awas_text {
   border-style: none;
   border-radius: 1em;
@@ -103,25 +108,21 @@ input, button {
 }
 
 /* Logo */
-
 .awas_logo {
-  font-family: 'Luckiest Guy', cursive;
+  font-family: "Luckiest Guy", cursive;
   font-size: 2.5em;
-  color:var(--awasColorGreen);
-  border:1px solid green;
+  color: var(--awasColorGreen);
 }
 
 /*box top green*/
-
 .box-top-green {
-   width: 223px;
-   height: 120px;
-   position: absolute;
-   top: -25px;
-   right: -100px;
-   transform: rotate(205deg);
-   background: var(--awasColorGreen);
-   display: none;
+  width: 223px;
+  height: 120px;
+  position: absolute;
+  top: -25px;
+  right: -100px;
+  transform: rotate(205deg);
+  background: var(--awasColorGreen);
 }
 
 .box-bottom-green {
@@ -132,10 +133,10 @@ input, button {
   left: -55px;
   transform: rotate(22deg);
   background: var(--awasColorGreen);
-  display: none;
 }
-.box-bottom-gray{
-  border:1px solid red;
+
+.box-bottom-gray {
+  border: 1px solid red;
   width: 520px;
   height: 87px;
   position: absolute;
@@ -143,48 +144,27 @@ input, button {
   right: 0px;
   transform: rotate(-10deg);
   background: var(--awasColorGray2);
-  display:none;
 }
 
-.awas_grid{
+.awas_grid {
   display: grid;
-  border:1px solid red;
+  border: 1px solid red;
   grid-template-columns: 1fr;
 }
-.awwas_grid_column{
-  border: 1px solid magenta; 
-}
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   /*Tablet*/
-  .awas_grid{
-    grid-template-columns: 1fr;
-    grid-column-gap: 10px;
-  }
-  .column_login {
-    padding:0 5%;
-  }
-}
-
-@media screen and (min-width: 920px){
-  /*Tablet*/
-  .awas_grid{
+  .grid {
+    display: grid;
+    grid-column-gap: 1em;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 10px;
   }
-  .column_login {
-    padding:0 5%;
+}
+@media screen and (min-width: 1024px) {
+  /*Tablet*/
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media screen and (min-width: 1440px){
-  /*Tablet*/
-  
-  /*.awas_grid{
-    grid-template-columns: 2fr, 1fr;
-  }*/
-    .column_login {
-    padding:0 15%;
-  }
-  
-}
+/*# sourceMappingURL=.estilos.css.map */
