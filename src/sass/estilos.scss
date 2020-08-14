@@ -88,7 +88,7 @@ input, button {
 .awas_login {
   display: flex;
   flex-direction: column;
-  border: 1px solid yellow;
+  //border: 1px solid yellow;
 }
 .awas_text {
   border-style: none;
@@ -108,7 +108,7 @@ input, button {
   font-family: 'Luckiest Guy', cursive;
   font-size: 2.5em;
   color:var(--awasColorGreen);
-  border:1px solid green;
+  //border:1px solid green;
 }
 
 /*box top green*/
@@ -135,7 +135,7 @@ input, button {
   display: none;
 }
 .box-bottom-gray{
-  border:1px solid red;
+  //border:1px solid red;
   width: 520px;
   height: 87px;
   position: absolute;
@@ -148,12 +148,12 @@ input, button {
 
 .awas_grid{
   display: grid;
-  border:1px solid red;
+  //border:1px solid red;
   grid-template-columns: 1fr;
 }
-.awwas_grid_column{
+/*.awwas_grid_column{
   border: 1px solid magenta; 
-}
+}*/
 
 @media screen and (min-width: 768px){
   /*Tablet*/
