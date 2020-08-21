@@ -54,7 +54,28 @@ input, button {
 }
 */
 .wrapper {
-  padding: 0.5em 1.8em;
+  padding: 0.5em 1.8em 3em 1.8em;
+}
+
+.awas_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: stretch;
+  align-items: center;
+  height: calc(100vh - 150px);
+}
+
+/*.awas_grid_column{
+  border: 1px solid yellow;
+}*/
+/*.column_login{
+  border: 1px solid magenta;
+}*/
+/*.awwas_grid_column{
+  border: 1px solid magenta; 
+}*/
+.column_intro {
+  display: none;
 }
 
 /*Button primary*/
@@ -76,7 +97,7 @@ input, button {
 }
 
 /*Button primary line*/
-.awas_btnPrimaryLine {
+.awas_btnSecundary {
   color: var(--awasColorGreen);
   font-size: 1em;
   padding: 0.5em 2em;
@@ -93,17 +114,37 @@ input, button {
   display: flex;
   flex-direction: column;
 }
+.awas_login_create {
+  margin-top: 30%;
+}
+.awas_login_enter {
+  margin-top: 30px;
+}
 
 .awas_text {
   border-style: none;
   border-radius: 1em;
   padding: 0.5em 1em;
   background: none;
-  border: 1px solid var(--awasColorWhite);
-  margin-top: 5px;
+  border: 1.3px solid var(--awasColorWhite);
+  margin-top: 10px;
   color: var(--awasColorWhite);
   font-size: 1em;
   font-weight: 500;
+}
+
+.awas_login_separate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  text-align: center;
+  margin: 55px 0 20px 0;
+}
+.awas_login_separate div {
+  margin: 0px 10px 0px 10px;
+  border-top: 0.1px solid white;
+  width: 150px;
 }
 
 /* Logo */
@@ -147,14 +188,35 @@ input, button {
   display: none;
 }
 
-.awas_grid {
-  display: grid;
-  grid-template-columns: 1fr;
+/*Redes sociales*/
+.icon {
+  display: flex;
+  justify-content: center;
+}
+.icon__google {
+  align-items: center;
+  background: white;
+  background-image: url("/images/icon-google.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.icon__facebook {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #3b5998;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  margin-left: 5px;
+  cursor: pointer;
 }
 
-/*.awwas_grid_column{
-  border: 1px solid magenta; 
-}*/
 @media screen and (min-width: 768px) {
   /*Tablet*/
   .awas_grid {
@@ -162,9 +224,14 @@ input, button {
     grid-column-gap: 10px;
   }
 
-  .column_login {
-    padding: 0 5%;
+  .column_intro {
+    display: block;
   }
+
+  /*.column_login {
+    //padding:0 5%;
+    border: 1px solid magenta;
+  }*/
 }
 @media screen and (min-width: 920px) {
   /*Tablet*/
@@ -184,6 +251,7 @@ input, button {
   }*/
   .column_login {
     padding: 0 15%;
+    width: 500px;
   }
 }
 
