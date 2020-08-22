@@ -120,10 +120,15 @@ input, button {
   flex-direction: column;
 }
 .awas_login_create {
-  margin-top: 100px;
+  margin-top: 20px;
 }
 .awas_login_enter {
   margin-top: 30px;
+}
+
+.column_login {
+  /*************************/
+  padding: 40px 0;
 }
 
 .awas_text {
@@ -144,12 +149,12 @@ input, button {
   justify-content: center;
   font-size: 15px;
   text-align: center;
-  margin: 55px 0 20px 0;
+  margin: 2em 0;
 }
 .awas_login_separate div {
   margin: 0px 10px 0px 10px;
-  border-top: 0.1px solid white;
-  width: 150px;
+  border-top: 0.1px solid rgba(255, 255, 255, 0.1);
+  width: 40%;
 }
 .awas_login_separate span {
   width: 100px;
@@ -241,6 +246,10 @@ input, button {
   .column_intro {
     display: block;
   }
+
+  .awas_login_separate div {
+    width: 140px;
+  }
 }
 @media screen and (min-width: 920px) {
   /*Tablet*/
@@ -261,6 +270,10 @@ input, button {
   .column_login {
     padding: 0 15%;
     width: 500px;
+  }
+
+  .awas_login_separate div {
+    width: 100px;
   }
 }
 
