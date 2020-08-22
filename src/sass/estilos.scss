@@ -47,10 +47,10 @@ input, button {
 }
 */
 .wrapper{
-  padding: 0.5em 1.8em 3em 1.8em;
+  //padding: 0.5em 1.8em 3em 1.8em;
   //border: 1px solid red;
   //height: calc(100vh - 25px);
-  
+  margin: auto 1.8em;
 }
 
 .awas_grid{
@@ -125,9 +125,9 @@ input, button {
     margin-top: 30px;
   }
 }
-.box-login{
-  min-height: calc(100vh - 30px);
-}
+/*.box-login{
+  min-height: calc(100vh - 60px);
+}*/
 .column_login {/*************************/
     padding:0;
     
