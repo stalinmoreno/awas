@@ -51,7 +51,7 @@ input, button {
   //padding: 0.5em 1.8em 3em 1.8em;
   //border: 1px solid red;
   //height: calc(100vh - 25px);
-  margin: 1.8em;
+  margin: 1em 1.8em;
 }
 
 .awas_grid{
@@ -119,7 +119,7 @@ input, button {
   display: flex;
   flex-direction: column;
   &_create {
-    margin-top: 20px;
+    margin-top: 40px;
   }
   &_enter{
     margin-top: 30px;
@@ -130,7 +130,6 @@ input, button {
 }*/
 .column_login {/*************************/
     padding:0;
-    
 }
 
 .awas_text {
@@ -160,19 +159,18 @@ input, button {
     width:100px;
   }
 }
-
+/*
 .awas_header{
   border: 1px solid magenta;
-  padding-top: 1em;
-}
+  //padding-top: 1em;
+}*/
 /* Logo */
 
 .awas_logo {
   font-family: 'Luckiest Guy', cursive;
   font-size: 2.5em;
   color:var(--awasColorGreen);
-  
-  border: 1px solid green;
+  //border: 1px solid green;
 }
 
 /*box top green*/
