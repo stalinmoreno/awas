@@ -126,10 +126,9 @@ input, button {
   margin-top: 30px;
 }
 
-.box-login {
-  min-height: calc(100vh - 50px);
-}
-
+/*.box-login{
+ min-height: calc(100vh - 50px);
+}*/
 .column_login {
   /*************************/
   padding: 0;
