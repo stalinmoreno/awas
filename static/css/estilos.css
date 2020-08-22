@@ -243,10 +243,6 @@ input, button {
     grid-column-gap: 10px;
   }
 
-  .column_intro {
-    display: block;
-  }
-
   .awas_login_separate div {
     width: 140px;
   }
@@ -256,6 +252,10 @@ input, button {
   .awas_grid {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10px;
+  }
+
+  .column_intro {
+    display: block;
   }
 
   .column_login {
