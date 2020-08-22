@@ -127,7 +127,7 @@ input, button {
 }
 
 .column_login {/*************************/
-    padding:40px 0;
+    padding:0;
     
 }
 
@@ -244,9 +244,7 @@ input, button {
     grid-template-columns: 1fr;
     grid-column-gap: 10px;
   }
-  .column_intro{
-    display: block;
-  }
+
 
   .awas_login_separate{
     div{
@@ -261,6 +259,9 @@ input, button {
   .awas_grid{
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10px;
+  }
+    .column_intro{
+    display: block;
   }
   .column_login {
     padding:0 5%;
