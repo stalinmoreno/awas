@@ -55,6 +55,7 @@ input, button {
 }
 */
 .wrapper {
+  height: calc(100vh - 55px);
   margin: 1em 1.8em;
 }
 
@@ -125,9 +126,10 @@ input, button {
   margin-top: 30px;
 }
 
-/*.box-login{
-  min-height: 100vh;
-}*/
+.box-login {
+  min-height: calc(100vh - 50px);
+}
+
 .column_login {
   /*************************/
   padding: 0;
@@ -162,11 +164,10 @@ input, button {
   width: 100px;
 }
 
-/*
-.awas_header{
-  border: 1px solid magenta;
-  //padding-top: 1em;
-}*/
+.awas_header {
+  padding-top: 1em;
+}
+
 /* Logo */
 .awas_logo {
   font-family: "Luckiest Guy", cursive;
@@ -212,6 +213,7 @@ input, button {
 .icon {
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
 }
 .icon__google {
   align-items: center;
