@@ -61,15 +61,7 @@ input, button {
   align-items: center;
   height: calc(100vh - 150px);
 }
-/*.awas_grid_column{
-  border: 1px solid yellow;
-}*/
-/*.column_login{
-  border: 1px solid magenta;
-}*/
-/*.awwas_grid_column{
-  border: 1px solid magenta; 
-}*/
+
 .column_intro{
   display: none;
 }
@@ -85,12 +77,22 @@ input, button {
   font-weight: 700 !important;
   margin-top: 5px;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
+.awas_btnPrimary:hover{
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.8);
+  //transition: opacity 0.3s ease-in-out;
+   transform: scale(1.05);
+}
+.awas_btnPrimary:after {
+  transition: opacity 0.3s ease-in-out;
+}
+
 
 .awas_h1 {
   color: var(--awasColorGray);
   font-size: 2em;
-  margin: 0;
+  margin-top: 10px;
 }
 
 /*Button primary line*/
@@ -104,7 +106,16 @@ input, button {
   margin-top: 5px;
   cursor: pointer;
   border: 2px solid var(--awasColorGreen);
+
+
 }
+
+.awas_btnSecundary:hover {
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+}
+
+
+
 
 /* Login */
 
@@ -112,12 +123,14 @@ input, button {
   display: flex;
   flex-direction: column;
   &_create {
-    margin-top: 30%;
+    margin-top: 100px;
   }
   &_enter{
     margin-top: 30px;
   }
 }
+
+
 .awas_text {
   border-style: none;
   border-radius: 1em;
@@ -140,6 +153,9 @@ input, button {
     margin: 0px 10px 0px 10px;
     border-top:0.1px solid white;
     width: 150px;
+  }
+  span{
+    width:100px;
   }
 }
 
@@ -203,7 +219,9 @@ input, button {
     margin-right: 5px;
     cursor: pointer;
   }
-
+  &__google:hover{
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.8);
+  }
   &__facebook{
     display: flex;
     align-items: center;
@@ -215,7 +233,9 @@ input, button {
     margin-left: 5px;
     cursor: pointer;
   }
-
+  &__facebook:hover{
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.8);
+  }
 }
 
 @media screen and (min-width: 768px){
@@ -227,10 +247,6 @@ input, button {
   .column_intro{
     display: block;
   }
-  /*.column_login {
-    //padding:0 5%;
-    border: 1px solid magenta;
-  }*/
 }
 
 @media screen and (min-width: 920px){
@@ -241,6 +257,7 @@ input, button {
   }
   .column_login {
     padding:0 5%;
+    
   }
 }
 
