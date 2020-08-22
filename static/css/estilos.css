@@ -94,7 +94,6 @@ input, button {
 .awas_h1 {
   color: var(--awasColorGray);
   font-size: 2em;
-  margin-top: 10px;
 }
 
 /*Button primary line*/
@@ -163,11 +162,17 @@ input, button {
   width: 100px;
 }
 
+.awas_header {
+  border: 1px solid magenta;
+  padding-top: 1em;
+}
+
 /* Logo */
 .awas_logo {
   font-family: "Luckiest Guy", cursive;
   font-size: 2.5em;
   color: var(--awasColorGreen);
+  border: 1px solid green;
 }
 
 /*box top green*/
