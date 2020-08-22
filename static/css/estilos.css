@@ -27,6 +27,7 @@ body {
   margin: 0;
   background: var(--awasColorBlack);
   color: var(--awasColorWhite);
+  box-sizing: content-box;
 }
 
 p {
@@ -62,7 +63,6 @@ input, button {
   grid-template-columns: 1fr;
   justify-items: stretch;
   align-items: center;
-  height: calc(100vh - 150px);
 }
 
 .column_intro {
@@ -126,10 +126,9 @@ input, button {
   margin-top: 30px;
 }
 
-.box-login {
+/*.box-login{
   min-height: 100vh;
-}
-
+}*/
 .column_login {
   /*************************/
   padding: 0;
