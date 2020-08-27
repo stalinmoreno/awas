@@ -15,12 +15,9 @@
 }
 
 body {
-  //font-family: 'Signika Negative', sans-serif;
-  //font-weight: 400;
   margin:0;
   background: var(--awasColorBlack);
   color: var(--awasColorWhite);
-  //overflow: hidden;
   box-sizing: content-box;
 }
 
@@ -37,6 +34,7 @@ input, button {
   border-style: none;
   outline-style: none;
 }
+
 /*
 .button {
   color: white;
@@ -48,8 +46,6 @@ input, button {
 }
 */
 .wrapper{
-  //padding: 0.5em 1.8em 3em 1.8em;
-  //height: calc(100vh - 55px);
   margin: 1em 1.8em;
 }
 
@@ -57,9 +53,7 @@ input, button {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: stretch;
-  //border: 1px solid green;
   align-items: center;
-  //height: calc(100vh - 350px);
 }
 
 .column_intro{
@@ -81,13 +75,11 @@ input, button {
 }
 .awas_btnPrimary:hover{
   box-shadow: 0px 0px 15px rgba(0,0,0,0.8);
-  //transition: opacity 0.3s ease-in-out;
-   transform: scale(1.05);
+  transform: scale(1.05);
 }
 .awas_btnPrimary:after {
   transition: opacity 0.3s ease-in-out;
 }
-
 
 .awas_h1 {
   color: var(--awasColorGray);
@@ -125,11 +117,7 @@ input, button {
   }
 }
 
-/*.box-login{
- min-height: calc(100vh - 50px);
-}*/
-
-.column_login {/*************************/
+.column_login {
     padding:0;
 }
 
@@ -163,6 +151,7 @@ input, button {
 
 .awas_header{
   padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 /* Logo */
@@ -179,11 +168,9 @@ input, button {
    width: 223px;
    height: 120px;
    position: absolute;
-   top: -25px;
-   right: -100px;
-   transform: rotate(205deg);
-   background: var(--awasColorGreen);
-   display: none;
+   top: 0;
+   right: 0;
+   background: url(../../images/awas-box-top-right.png) center no-repeat;
 }
 .box-bottom-green {
   width: 200px;
@@ -212,23 +199,38 @@ input, button {
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
+
+  a {
+    text-decoration: none;
+  }
+
   &__google {
     align-items: center;
     background: white;
-    background-image: url("../../images/icon-google.png");
-    background-repeat: no-repeat;
-    background-position: center;
+    color: #212121;
+    display: flex;
+    .img-google {
+      background-image: url("../../images/icon-google.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 40px;
+      height: 40px;
+    }
     border-radius: 50px;
-    width: 40px;
-    height: 40px;
     margin-right: 5px;
     cursor: pointer;
+    .img-google-text{
+      display:none;
+    }
   }
+
   &__google:hover{
     box-shadow: 0px 0px 20px rgba(0,0,0,0.8);
   }
+
   &__facebook{
     display: flex;
+    color:white;
     align-items: center;
     justify-content: center;
     background: #3b5998;
@@ -237,7 +239,11 @@ input, button {
     border-radius: 50px;
     margin-left: 5px;
     cursor: pointer;
+    .icon_fb_text{
+      display: none;
+    }
   }
+
   &__facebook:hover{
     box-shadow: 0px 0px 20px rgba(0,0,0,0.8);
   }
@@ -249,7 +255,6 @@ input, button {
     grid-template-columns: 1fr;
     grid-column-gap: 10px;
   }
-
 
   .awas_login_separate{
     div{
@@ -275,6 +280,38 @@ input, button {
       font-size: 1.8em;
       font-weight: 500;
   }  
+
+  
+.icon {
+  display: flex;
+  font-weight: 600;
+  
+  &__google {
+    justify-content: center;
+    width: 140px;
+    height: 40px;
+    .img-google {
+      width: 20px;
+      height: 40px;
+      margin-right: 20px;
+    }
+    .img-google-text {
+      display:block;
+    }
+  }
+
+  &__facebook{    
+    width: 140px;
+    .icon_fb {
+      margin-right: 10px;
+    }
+    .icon_fb_text{
+      display: block;
+    }
+  }
+ 
+ 
+}
 
 }
 
