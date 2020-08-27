@@ -125,11 +125,7 @@ input, button {
   margin-top: 30px;
 }
 
-/*.box-login{
- min-height: calc(100vh - 50px);
-}*/
 .column_login {
-  /*************************/
   padding: 0;
 }
 
@@ -164,6 +160,7 @@ input, button {
 
 .awas_header {
   padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 /* Logo */
@@ -178,11 +175,9 @@ input, button {
   width: 223px;
   height: 120px;
   position: absolute;
-  top: -25px;
-  right: -100px;
-  transform: rotate(205deg);
-  background: var(--awasColorGreen);
-  display: none;
+  top: 0;
+  right: 0;
+  background: url(../../images/awas-box-top-right.png) center no-repeat;
 }
 
 .box-bottom-green {
@@ -213,23 +208,34 @@ input, button {
   justify-content: center;
   margin-bottom: 10px;
 }
+.icon a {
+  text-decoration: none;
+}
 .icon__google {
   align-items: center;
   background: white;
+  color: #212121;
+  display: flex;
+  border-radius: 50px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.icon__google .img-google {
   background-image: url("../../images/icon-google.png");
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 50px;
   width: 40px;
   height: 40px;
-  margin-right: 5px;
-  cursor: pointer;
+}
+.icon__google .img-google-text {
+  display: none;
 }
 .icon__google:hover {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
 }
 .icon__facebook {
   display: flex;
+  color: white;
   align-items: center;
   justify-content: center;
   background: #3b5998;
@@ -238,6 +244,9 @@ input, button {
   border-radius: 50px;
   margin-left: 5px;
   cursor: pointer;
+}
+.icon__facebook .icon_fb_text {
+  display: none;
 }
 .icon__facebook:hover {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
@@ -272,6 +281,33 @@ input, button {
   p {
     font-size: 1.8em;
     font-weight: 500;
+  }
+
+  .icon {
+    display: flex;
+    font-weight: 600;
+  }
+  .icon__google {
+    justify-content: center;
+    width: 140px;
+    height: 40px;
+  }
+  .icon__google .img-google {
+    width: 20px;
+    height: 40px;
+    margin-right: 20px;
+  }
+  .icon__google .img-google-text {
+    display: block;
+  }
+  .icon__facebook {
+    width: 140px;
+  }
+  .icon__facebook .icon_fb {
+    margin-right: 10px;
+  }
+  .icon__facebook .icon_fb_text {
+    display: block;
   }
 }
 @media screen and (min-width: 1440px) {
