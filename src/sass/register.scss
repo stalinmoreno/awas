@@ -2,3 +2,19 @@
   display: flex;
   flex-direction: column;
 }
+
+.box-inputs {
+  display: grid;
+  grid-template-rows: 0.5f 0.5f;
+}
+/*
+#awas_text_name, #awas_text_lastname, #awas_text_email, #awas_text_email {
+  width: 100%;
+}
+*/
+#awas_text_born {
+  width: 50%;
+}
+#awas_text_sex {
+  width: 50%;
+}
