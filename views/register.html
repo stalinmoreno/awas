@@ -21,29 +21,53 @@
       <div class="awas_grid_column ">
 
       </div>
-      <div class="awas_grid_column ">
+      <div class="awas_grid_column column-register">
         <div class="box-register">
           <p>Crear tu cuenta, para continuar con la diversión</p>
           <span>Únete a AWAS y no esperes más</span>
           <div class="box-inputs">
-            <input type="text" class="awas_text" id="awas_text_name" name="" id="" placeholder="Nombres">
-            <input type="text" class="awas_text" id="awas_text_lastname" name="" id="" placeholder="Apallidos">
-            <input type="text" class="awas_text" id="awas_text_born" name="" id="" placeholder="Fecha de nacimiento">
-            <input type="text" class="awas_text" id="awas_text_sex" name="" id="" placeholder="Sexo">
-            <input type="text" class="awas_text" id="awas_text_email" name="" id="" placeholder="Correo">
-            <input type="text" class="awas_text" id="awas_text_password" name="" id="" placeholder="Contraseña">
+            <div class="awas-col-12">
+              <input type="text" class="awas_text awas-control" id="awas_text_name" name="" id="" placeholder="Nombres">
+            </div>
+            <div class="awas-col-12">
+              <input type="text" class="awas_text awas-control" id="awas_text_lastname" name="" id=""
+                placeholder="Apallidos">
+            </div>
+            <div class="awas-row">
+              <div class="awas-col-6">
+                <input type="text" class="awas_text awas-control" id="awas_text_born" name="" id=""
+                  placeholder="Fecha de nacimiento">
+              </div>
+              <div class="awas-col-6">
+                <select class="awas_cbo" name="" id="">
+                  <option value="0">Seleccione</option>
+                  <option value="1">Femenino</option>
+                  <option value="2">Masculino</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="awas-col-12">
+              <input type="text" class="awas_text awas-control" id="awas_text_email" name="" id="" placeholder="Correo">
+            </div>
+            <div class="awas-col-12">
+              <input type="text" class="awas_text awas-control" id="awas_text_password" name="" id=""
+                placeholder="Contraseña">
+            </div>
 
           </div>
           <p>Al registrarte estas aceptando nuestros Terminos y condiciones, además de nuestras Políticas de privacidad,
             incluido el Uso de cookies.</p>
           <button class="awas_btnPrimary">Registrarme</button>
-          <p>Ya tengo una cuenta <span>Iniciar Sesión</span></p>
+          <p>Ya tengo una cuenta <a href="#" id="linkGoLogin" class="awas_link">Iniciar Sesión</a></p>
+
         </div>
       </div>
 
     </div>
   </div>
 
+  <script src="../js/register.js"></script>
 </body>
 
 </html>

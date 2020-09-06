@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>AWAS</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Luckiest+Guy&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../static/css/estilos.css">
+  <link rel="stylesheet" href="../static/css/register.css">
+  <link rel="stylesheet" href="../css/splide/splide.min.css">
+  <script src="../js/splide/splide.min.js"></script>
+  <script defer src="../js/all.min.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1>Hola Astrid, Cuentanos como te sientes hoy?</h1>
+    <div id="btnExit" class="box__close"><a href="../index.html"><i class="far fa-times-circle"></i></a></div>
+    <div class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+
+          <li class="splide__slide">
+            <div class="slide__personality">
+              <div class="slide__personality__img">
+                <img src="../images/imgcantante.png" alt="">
+                <div class="slide__personality__img__title">Conversador</div>
+              </div>
+              <div class="slide__personality__description">Que conversa, en especial la persona que sabe hacer amena y
+                agradable una conversación</div>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="slide__personality">
+              <div class="slide__personality__img">
+                <img src="../images/imgcantante.png" alt="">
+                <div class="slide__personality__img__title">Bailarin</div>
+              </div>
+              <div class="slide__personality__description">Que conversa, en especial la persona que sabe hacer amena y
+                agradable una conversación</div>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="slide__personality">
+              <div class="slide__personality__img">
+                <img src="../images/imgcantante.png" alt="">
+                <div class="slide__personality__img__title">Cantante</div>
+              </div>
+              <div class="slide__personality__description">Que conversa, en especial la persona que sabe hacer amena y
+                agradable una conversación</div>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="slide__personality">
+              <div class="slide__personality__img">
+                <img src="../images/imgcantante.png" alt="">
+                <div class="slide__personality__img__title">Otro 1</div>
+              </div>
+              <div class="slide__personality__description">Que conversa, en especial la persona que sabe hacer amena y
+                agradable una conversación</div>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="slide__personality">
+              <div class="slide__personality__img">
+                <img src="../images/imgcantante.png" alt="">
+                <div class="slide__personality__img__title">Otro 2</div>
+              </div>
+              <div class="slide__personality__description">Que conversa, en especial la persona que sabe hacer amena y
+                agradable una conversación</div>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="slide__personality">
+              <div class="slide__personality__img">
+                <img src="../images/imgcantante.png" alt="">
+                <div class="slide__personality__img__title">Otro 3</div>
+              </div>
+              <div class="slide__personality__description">Que conversa, en especial la persona que sabe hacer amena y
+                agradable una conversación</div>
+            </div>
+          </li>
+
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script>
+
+
+
+
+    new Splide('.splide', {
+      type: 'loop',
+      cover: true,
+      perPage: 3,
+      focus: 'center',
+    }).mount();
+
+
+
+    /*
+                    var pantalla = function () {
+                      if (screen.width < 768) {
+                        console.log(screen.width, " menor");
+                      } else {
+                        console.log(screen.width, "mayor");
+                      }
+                    }
+                    document.getElementsByTagName('body').addEventListener("change", pantalla);
+                */
+    /*
+     new Splide('.splide', {
+       type: 'loop',
+       //height: '60%',
+       autoWidth: true,
+       focus: 'center',
+     }).mount();
+ */
+
+
+  </script>
+
+</body>
+
+</html>
