@@ -1,9 +1,16 @@
 
 
+var register = function (e) {
+  e.preventDefault();
+  console.log(window.location);
+  window.location = '/views/register.html';
+};
+
 var login = function (e) {
   e.preventDefault();
-  window.location = '/views/register.html';
-}
+  console.log(window.location);
+  window.location = '/views/personality.html';
+};
 
-document.getElementById('login').addEventListener("click", login);
-
+document.getElementById('btnRegister').addEventListener("click", register);
+document.getElementById('btnLogin').addEventListener("click", login);
