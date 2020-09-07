@@ -3,13 +3,13 @@
 var register = function (e) {
   e.preventDefault();
   console.log(window.location);
-  window.location = window.location.href + '/views/register.html';
+  window.location = window.location.origin + '/awas/views/register.html';
 };
 
 var login = function (e) {
   e.preventDefault();
   console.log(window.location);
-  window.location = window.location.href + '/views/personality.html';
+  window.location = window.location.origin + '/awas/views/personality.html';
 };
 
 document.getElementById('btnRegister').addEventListener("click", register);
