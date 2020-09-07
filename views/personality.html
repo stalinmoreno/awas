@@ -91,17 +91,17 @@
   </div>
   <script>
 
-
-
-
     new Splide('.splide', {
       type: 'loop',
       cover: true,
       perPage: 3,
+      breakpoints: {
+        768: {
+          perPage: 1,
+        }
+      },
       focus: 'center',
     }).mount();
-
-
 
     /*
                     var pantalla = function () {
